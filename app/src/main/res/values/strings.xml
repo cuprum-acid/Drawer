@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Drawer</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="delete">Delete</string>
+    <string name="add_frame">Add frame</string>
+    <string name="frames">Frames</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="pencil">Pencil</string>
+    <string name="brush">Brush</string>
+    <string name="eraser">Eraser</string>
+    <string name="selection">Selection</string>
+    <string name="color_picker">Color picker</string>
+</resources>
