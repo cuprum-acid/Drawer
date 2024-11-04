@@ -12,4 +12,9 @@
     <string name="eraser">Eraser</string>
     <string name="selection">Selection</string>
     <string name="color_picker">Color picker</string>
+    <string name="color_pallete">Color pallete</string>
+    <string name="white_color">White color</string>
+    <string name="red_color">Red color</string>
+    <string name="black_color">Black color</string>
+    <string name="blue_color">Blue color</string>
 </resources>

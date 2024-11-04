@@ -1,0 +1,43 @@
+<!-- res/layout/color_picker_menu.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/pallete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_color_pallete"
+        android:contentDescription="@string/color_pallete" />
+
+    <ImageView
+        android:id="@+id/color_white"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_white"
+        android:contentDescription="@string/white_color" />
+
+    <ImageView
+        android:id="@+id/color_red"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_red"
+        android:contentDescription="@string/red_color" />
+
+    <ImageView
+        android:id="@+id/color_black"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_black"
+        android:contentDescription="@string/black_color" />
+
+    <ImageView
+        android:id="@+id/color_blue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_color_picker"
+        android:contentDescription="@string/blue_color" />
+</LinearLayout>

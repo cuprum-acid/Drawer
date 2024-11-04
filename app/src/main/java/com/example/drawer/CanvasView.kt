@@ -22,7 +22,7 @@ class CanvasView @JvmOverloads constructor(
     private var currentFrameIndex: Int = 0
 
     private val paint: Paint = Paint().apply {
-        color = Color.CYAN
+        color = Color.parseColor("#1976D2")
         isAntiAlias = true
         strokeWidth = 10f
         style = Paint.Style.STROKE
@@ -124,6 +124,12 @@ class CanvasView @JvmOverloads constructor(
         path.reset()
     }
 
+    fun setBrushColor(color: Int) {
+        paint.color = color
+        invalidate()
+    }
+
+
     fun saveCurrentFrame() {
         bitmap?.let {
             previousFrames.add(it.copy(it.config, true))
@@ -133,7 +139,8 @@ class CanvasView @JvmOverloads constructor(
 
     fun removeCurrentFrame() {
         if (previousFrames.isNotEmpty()) {
-            bitmap = previousFrames.removeAt(previousFrames.lastIndex).copy(Bitmap.Config.ARGB_8888, true)
+            bitmap = previousFrames.removeAt(previousFrames.lastIndex)
+                .copy(Bitmap.Config.ARGB_8888, true)
             canvas = Canvas(bitmap!!)
             invalidate()
         }
